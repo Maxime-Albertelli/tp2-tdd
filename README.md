@@ -16,7 +16,7 @@ L'objectif premier de ce TP est de vous familiariser avec tous les nouveaux outi
 
 Ce TP est une libre adaptation du [TP1 du module M2105](https://github.com/IUTInfoAix-M2105/tp1_19et20).
 
-## TP 2 : Découverte de l'environnement de travail, des outils et premiers programmes en Java
+## TP 2 : Découverte de l'environnement de travail, des outils et premiers programmes en Java [![Java CI with Maven](https://github.com/IUTInfoAix-R203/tp2-tdd/actions/workflows/maven.yml/badge.svg)](https://github.com/IUTInfoAix-R203/tp2-tdd/actions/workflows/maven.yml)
 
 ### Création de votre fork
 
