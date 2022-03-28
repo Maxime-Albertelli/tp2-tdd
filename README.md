@@ -26,7 +26,7 @@ Cela vous sera indispensable pour commencer à travailler sur vos TP. Comme vous
 
 La première chose à faire est de créer un fork de ce dépôt. Pour ce faire, rendez-vous sur le lien suivant :
 
-https://classroom.github.com/a/Lr1twuc_
+[https://classroom.github.com/a/Lr1twuc_](https://classroom.github.com/a/Lr1twuc_)
 
 GitHub va vous créer un dépôt contenant un fork du dépôt 'IUTInfoAix-R203/tp2-tdd' et s'appellant 'IUTInfoAix-R203/tp2-votreUsername'. Vous apparaîtrez automatiquement comme contributeur de ce projet pour y pousser votre travail. Sachez qu'un robot récupérera automatiquement votre code après chaque *push* pour vérifier que les tests passent et calculer votre taux d'accomplissement du TP.
 
@@ -257,6 +257,7 @@ Nous avons tous les ingrédients pour résoudre notre problème. Il ne manque pl
 * Écrire une classe `Robot` représentant le robot à simuler.
 * Écrire une classe `RobotSimulator` qui permet de passer une chaîne d'instructions à un robot et de piloter le fonctionnement du robot en fonction d'une séquence d'instructions passées en paramètre.
   
+
 Comme pour l'exercice précédent, vous devez activer les tests les uns après les autres et soumettre votre solution après chaque itération du cycle principal du workflow.
 
 Une fois l'exercice terminé, n'oubliez pas de pousser les modifications de la branche de fonctionnalité associée à l'exercice sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
@@ -380,6 +381,7 @@ méthode `main()` :
 * Pour donner des arguments à une application dans IntelliJ IDEA, il faut passer par le menu `Run->Edit Configurations...`.
   En sélectionnant `App`, vous pouvez spécifier vos arguments dans le champ *Program Arguments*
   
+
 ![edit configuration](src/main/resources/assets/edit_configuration.png)
 
 * Regardez bien les différents test pour bien comprendre les schémas.
