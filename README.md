@@ -32,10 +32,7 @@ GitHub va vous créer un dépôt contenant un fork du dépôt 'IUTInfoAix-R203/t
 
 ### Découverte et prise en main de l'IDE
 
-Avant de commencer le TP à proprement parler, lisez la page ["Découverte et prise en main de l'IDE"](https://github.com/IUTInfoAix-R203/tp2-tdd/blob/main/decouverte_et_prise_en_main_IDE.md).
-
-
-Si jamais vous rencontrez des problèmes avec le JDK installé sur votre machine, vous pouvez en installer un localement en exécutant les commandes suivantes :
+La JVM installée sur les postes n'étant pas à jour, vous pouvez localement le JDK 17 en exécutant les commandes suivantes :
 
 ```sh
 ~$ wget https://cdn.azul.com/zulu/bin/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64.tar.gz
@@ -64,6 +61,8 @@ OpenJDK Runtime Environment Zulu17.32+13-CA (build 17.0.2+8-LTS)
 OpenJDK 64-Bit Server VM Zulu17.32+13-CA (build 17.0.2+8-LTS, mixed mode, sharing)
 ~$ 
 ```
+
+Avant de commencer le TP à proprement parler, lisez la page ["Découverte et prise en main de l'IDE"](https://github.com/IUTInfoAix-R203/tp2-tdd/blob/main/decouverte_et_prise_en_main_IDE.md).
 
 Pour indiquer à IntelliJ d'utiliser ce JDK, suivez ce guide : 
 
@@ -142,7 +141,7 @@ Exercice d'introduction classique. Dites simplement "Hello world!"
 
 "Hello world" est le premier programme que l'on écrit pour commencer la programmation dans un nouveau langage.
 
-On considérera la résolution d'un exercice comme l'implementation d'une fonctionnalité. L'ensemble des modification devra donc avoir lieu dans une branche de fonctionnalité appelée `exercice1`. Pour la créer, vous devez exécuter les commandes suivantes :
+On considérera la résolution d'un exercice comme l'implementation d'une fonctionnalité. L'ensemble des modification devra donc avoir lieu dans une branche de fonctionnalité appelée `exercice1`. Pour la créer, vous devez exécuter les commandes suivantes dans le **terminal intégré de l'IDE** :
 
 ```sh
 ~/.../tp2-VotreUsername (main)$ git branch exercice1
