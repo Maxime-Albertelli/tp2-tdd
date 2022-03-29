@@ -34,6 +34,61 @@ GitHub va vous créer un dépôt contenant un fork du dépôt 'IUTInfoAix-R203/t
 
 Avant de commencer le TP à proprement parler, lisez la page ["Découverte et prise en main de l'IDE"](https://github.com/IUTInfoAix-R203/tp2-tdd/blob/main/decouverte_et_prise_en_main_IDE.md).
 
+
+Si jamais vous rencontrez des problèmes avec le JDK installé sur votre machine, vous pouvez en installer un localement en exécutant les commandes suivantes :
+
+```sh
+~$ wget https://cdn.azul.com/zulu/bin/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64.tar.gz
+~$ tar xvzf zulu17.32.13-ca-fx-jdk17.0.2-linux_x64.tar.gz
+```
+
+Si tout a correctement fonctionné, le dossier `zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/` existe dans votre dossier personnel. Éditez maintenant le fichier `~/.bashrc` et ajoutez les lignes suivantes à la fin:
+
+```ssh
+~$ export PATH=$PATH:${HOME}/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/bin/
+~$ export JAVA_HOME=${HOME}/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/bin/java
+```
+
+Puis dans votre terminal courant, tapez la commandes suivante pour charger cette configuration :
+
+```sh
+~$ source ~/.bashrc
+``` 
+
+Pour vérifier que vous avez bien la bonne version de Java configurée, vous pouvez exécuter la commande `java -version` qui doit vous afficher la sortie suivante : 
+
+```sh
+~$ java -version
+openjdk version "17.0.2" 2022-01-18 LTS
+OpenJDK Runtime Environment Zulu17.32+13-CA (build 17.0.2+8-LTS)
+OpenJDK 64-Bit Server VM Zulu17.32+13-CA (build 17.0.2+8-LTS, mixed mode, sharing)
+~$ 
+```
+
+Pour indiquer à IntelliJ d'utiliser ce JDK, suivez ce guide : 
+
+https://www.jetbrains.com/help/idea/sdk.html#define-sdk
+
+##### Configurer Gitpod (uniquement pour le travail à distance)
+En cas de travail depuis une machine sur laquelle vous ne pouvez pas installer tous les outils, vous pouvez pour ce TP utiliser le service Gitpod :
+
+[![Open In Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/IUTInfoAix-R203/tp2-tdd)
+
+
+Pour disposer de Gitpod sur tous vos projets hébergés sur Github, suivez les étapes suivantes :
+
+- Créez un compte Gitpod en vous rendant sur la page [Get started](https://www.gitpod.io/#get-started). Identifiez-vous avec votre compte github en cliquant sur le bouton "Continue with Github". Si vous avez déjà obtenu votre pack [Github Education](https://education.github.com/pack), vous pouvez bénéficier de l'offre 100h/mois. N'oubliez pas d'en faire la demande dans les [réglages de votre compte Gitpod](https://gitpod.io/plans).
+
+- Installez l'[application Gitpod](https://github.com/apps/gitpod-io/installations/new). L'application GitHub de Gitpod est similaire à un serveur CI et préparera en permanence des pré-constructions pour toutes vos branches et demandes d'extraction - vous n'avez donc pas à attendre que Maven ou NPM télécharge Internet lorsque vous souhaitez commencer à travailler.
+
+- Démarrez votre premier espace de travail avec une préconstruction en préfixant l'URL du référentiel par [https://gitpod.io#prebuild/](https://gitpod.io#prebuild/). Gitpod affiche l'état d'avancement de la pré-construction en exécutant les commandes `init` du fichier `.gitpod.yml` avant de démarrer un espace de travail. Plus tard, lorsque vous créez un nouvel espace de travail sur une branche, ou une Pull Request, l'espace de travail se charge beaucoup plus rapidement, car toutes les dépendances sont déjà téléchargées et le code est compilé.
+
+- Installez de l'extension navigateur Gitpod sur tous les navigateurs basés sur [Chromium](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) (tels que Microsoft Edge, Brave, Chrome, ...) ou sur [Firefox](https://addons.mozilla.org/fr/firefox/addon/gitpod/). L'extension ajoute simplement un bouton Gitpod sur chaque projet et branche sur GitHub, et Bitbucket qui préfixe l'URL avec [http://gitpod.io/#](http://gitpod.io/#) afin que vous puissiez facilement ouvrir un nouvel espace de travail à partir de n'importe quel contexte Git.
+
+- Personnalisez le thème par défaut en ouvrant le panneau de commande (avec le raccourci clavier `Ctrl+Shift+P`) et en sélectionnant `Preferences: Color Theme`. Si vous préférez par exemple les couleur sombre pour reposer vos yeux, le thème *gitpod dark* devrait vous convenir. Vous pouvez rajouter de nouveaux thème directement en recherchant dans les extensions (avec le raccourci clavier `Ctrl+Shift+X`).
+
+Vous pouvez maintenant commencer à traiter les environnements de développement comme des ressources automatisées que vous lancez lorsque vous en avez besoin et fermez (et oubliez) lorsque vous avez terminé votre tâche. Les environnements de développement deviennent totalement éphémères. Attention avec votre offre Github éducation vous ne disposez que de 100h mensuels, donc il faut penser à fermer vos espaces de travail quand vous avez terminé de vous en servir (dans tous les cas ils seront fermés automatiquement après 30 minutes d'inactivité).
+
 ### Mode opératoire du TP (Workflow)
 
 Maintenant que vous savez utiliser Git en ligne de commande, que vous avez forké avec le lien classroom et importé le TP dans votre IDE, vous êtes en capacité de travailler sur vos exercices.
