@@ -45,7 +45,7 @@ Si jamais vous rencontrez des problèmes avec le JDK installé sur votre machine
 Si tout a correctement fonctionné, le dossier `zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/` existe dans votre dossier personnel. Éditez maintenant le fichier `~/.bashrc` et ajoutez les lignes suivantes à la fin:
 
 ```ssh
-~$ export PATH=$PATH:${HOME}/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/bin/
+~$ export PATH=${HOME}/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/bin/:$PATH
 ~$ export JAVA_HOME=${HOME}/zulu17.32.13-ca-fx-jdk17.0.2-linux_x64/bin/java
 ```
 
